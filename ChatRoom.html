@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="MainRoom" class="w-full h-screen flex">
+
+        <div id="SideBar1" class="w-1/4 h-screen" >
+            <button id="closeSidebar" class="close-sidebar">&times;</button> 
+            
+            <div id="SideBarUper" class="w-100% h-100%">
+                <div id="ProfilePhoto"></div>
+                <button id="ADDphoto" >ADD photo</button>
+                <input type="file" id="photoInput" style="display: none;" accept="image/*">
+                <h1 id="UserName">UserName</h1>
+            </div>
+            <div id="SideBarDown">
+                <button id="logOut">LogOut</button>
+                <h1 id="Ower" ><i>Power By </i> V.Webx</h1>
+
+            </div>
+        </div>
+        <div id="ChatRoom" class="w-screen h-screen">
+            <div id="hand">
+               
+                <!-- <button id="toggleSidebar" class="toggle-sidebar">Profile</button> Add this button -->
+
+                <div id="GroupPhoto" ></div>
+                <h1 id="GroupName" >JSPM UNISERTY GROUP</h1>
+                <div id="toggleSidebar" class="toggle-sidebar">  <img id="toggleProfilePhoto" class="toggle-profile-photo" src="" alt="Profile Photo" > </div>
+            </div>
+            <div id="msgBox" class =" h-full w-full " >
+                <!-- <div id="message-right">this is message from right</div>
+                <div id="message-left">this is message from left</div> -->
+            </div>
+            <div id="textArea">
+                <form   id="Send-container">
+
+                   <div id="InputBox" >
+                     <input type="text" placeholder="Message..." autoComplete="off" id="message" name="messageInp">
+                    <input type="file" id="image" accept="image/*"  >
+                    <label for="image" class="AddImage"  > 
+                    <button id="SendBtm"  >Send</button> 
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="Client.js"></script>
+</body>
+</html>

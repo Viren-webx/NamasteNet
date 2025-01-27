@@ -1,0 +1,535 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#MainRoom{
+    width:40ren ;
+    height: 40rem;
+
+   display: flex;
+
+
+}
+
+#SideBar1{
+
+    /* background: linear-gradient(to left,rgba(0, 0, 0, 0.527), blue, purple); */
+background-color: rgb(13, 13, 92);
+    border-right:3px solid white;
+
+
+   /* background-color: rgba(128, 128, 128, 0.792); */
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
+}
+#ProfilePhoto{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color:white;
+    border: 3px solid navy;
+   
+margin-top: 20px;
+justify-self: center;
+
+}
+#ADDphoto{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+  padding: 5px;
+    background-color: rgb(33, 123, 7);
+}
+
+#UserName{
+    
+margin-top: 10px;
+font-size: 25px;
+font-weight: 500;
+justify-self: center;
+
+
+}
+
+#SideBarUper{
+    height: 100%;
+    width: 100%;
+justify-items: center;
+
+   
+}
+
+#SideBarDown{
+
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 90px;
+    
+   
+
+
+}
+#logOut{
+
+    font-size: 20px;
+    font-weight: 500;
+    background-color: red;
+    padding-left: 5px;  
+    padding-right: 5px;
+    border-radius: 5px;
+border: solid 2px black;
+    margin-left: 10px;
+
+
+}
+#logOut:active{
+    transition: all;
+    transform: scale(0.9);
+}
+#Ower{
+    margin-top: 20px;
+    font-size: 15px;
+color: wheat;
+}
+
+
+#ChatRoom{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    background-color:rgba(0, 0, 0, 0.527);
+
+}
+
+
+#hand{
+
+    width: 100%;
+    height: 70px;
+   
+    padding: 10px;
+    padding-bottom: 10px;
+    /* background-color: #3D3D3D; */
+    /* background-color: rgb(148, 9, 148); */
+    background: linear-gradient(to left,rgba(0, 0, 0, 0.527), blue, purple);
+
+
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+#GroupPhoto{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+    background-image:url(JSPM2_images.png);
+    background-size: cover;
+   
+}
+#GroupName{
+
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+#textArea{
+width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  background-color: black;
+
+}
+
+#InputBox{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+#message{
+   padding-left: 10px;
+    color: black;
+    width: 90%;
+    height: 40px;
+    margin-top: 5px;
+  
+    border-radius: 10px;
+   
+}
+#message:focus{
+    outline: none;
+    
+}
+
+#image{
+display: none;
+}
+.AddImage{
+    width: 30px;
+    height: 30px;
+   
+    background-image: url(image-solid.svg);
+    background-size: contain;
+
+   
+    
+}
+
+#SendBtm{
+
+background-color: rgba(0, 0, 255, 0.715);
+color: white;
+border-radius: 10px;
+font-size: 20px;
+font-weight: 500;
+padding-left: 10px;
+padding-right: 10px;
+margin-left: 40px;
+
+
+
+
+}
+
+#sentText{
+    padding: 10px;
+    background-color: red;
+}
+
+#msgBox{
+
+  height: 100%;
+display: flex;
+flex-direction: column;
+  padding: 10px;
+  
+    overflow: auto;
+}
+
+#msgBox::-webkit-scrollbar{
+    display: none;
+}
+.message.received{
+    background-color: rgb(18, 125, 167);
+    align-self: flex-end;
+    clear: both;
+
+   
+
+}
+.message.Join{
+    background-color: wheat;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+   margin-left: 30%;
+   justify-content: center;
+    width: 250px;
+    clear: both;  
+
+   
+
+}
+#message.rigth{
+    background-color: rgb(213, 29, 29);
+  
+}
+.message.sent{
+    background-color: rgb(125, 12, 125);
+    align-self: flex-start;
+    clear: both;  
+}
+.message.leftChat{
+    background-color: rgba(255, 0, 0, 0.599);
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+   margin-left: 30%;
+   justify-content: center;
+    width: 250px;
+    clear: both;  
+    
+}
+.message{
+
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    max-width: 60%;
+   overflow-wrap: break-word;
+}
+.message.img{
+    max-width: 100%;
+    border-radius: 20px;
+
+}
+.message.receivedImg{
+    background-color: rgb(18, 125, 167);
+    align-self: flex-end;
+    clear: both;
+    
+}
+.message.sentImg{
+    background-color: rgb(125, 12, 125);
+    align-self: flex-start;
+    clear: both;
+
+}
+.message.YOU{
+    color: red;
+}
+
+
+/* .message2{
+    background-color: gray;
+    margin:10px;
+    padding: 10px;
+    float: right;
+    clear: both;
+
+} */
+
+
+/* .message.received {
+    background-color: #ffebcc; /* Change this color to your desired color for received messages */
+
+    /* Toggle sidebar button */
+.toggle-sidebar {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+  
+  bottom: 3px;
+  top: 3px;
+   
+    display: inline;
+
+    background-color: #007bff;
+    color: white;
+    border: none;
+   
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+   
+}
+
+.toggle-sidebar:hover {
+    background-color: #0056b3;
+}
+.toggle-profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   border: solid 2px white;
+   display: none;
+}
+
+
+.close-sidebar {
+    display: none;
+    position: absolute;
+
+    right: 10px;
+
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-sidebar:hover {
+    background-color: #cc0000;
+}
+/* Sidebar transition */
+/* #SideBar1 {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+#SideBar1.show {
+    transform: translateX(0);
+} */
+    
+/* Responsive styles */
+
+@media (max-width: 1480px) {
+
+    #Ower{
+        margin-top: 10px;
+        gap: 30px;
+
+    }
+    #SideBarDown{
+        margin-top: 10px;
+        gap: 30px;
+    }
+    #ProfilePhoto{
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+    }
+    #LogOut{
+        font-size: 10px;
+    }
+   
+
+}
+
+@media (max-width: 865px) {
+    #SideBar1 {
+        
+        display: none;
+        position: fixed; 
+        height: auto;
+        width: auto;
+ 
+       
+        /* Hide the sidebar on very small screens */
+    }
+    #SideBarDown{
+        margin-top: 50px;
+    }
+    #ChatRoom {
+        width: 100%;
+        height: 100%;
+        }
+
+    #msgBox {
+        
+        height: calc(100% - 200px); /* Adjust this value based on the height of other elements */
+    }
+    #InputBox{
+        width: 90%;
+        padding-right: 0px;
+    }
+    #hand{
+    padding: 0px;
+    padding-left: 20px;
+    }
+    #SendBtm{
+        font-size: 23px;
+       margin-left: 70px;
+       margin-bottom: 30px;
+    }
+    #textArea{
+
+        padding-left: 10px;
+       margin-bottom: 0px;
+    }
+    #GroupName{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #GroupPhoto{
+        margin-left: 20px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        padding-right: 0px;
+    }
+    .toggle-sidebar {
+        left: 55%;
+        display: block;
+    }
+
+    #SideBar1.show {
+        display: block;
+    }
+
+    .close-sidebar {
+        display: block;
+    }
+    .toggle-profile-photo {
+        display: block;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #SideBar1 {
+      
+        height: auto; /* Hide the sidebar on very small screens */
+    }
+
+    #ChatRoom {
+        width: 100%;
+        height: 100%;
+        }
+
+    #msgBox {
+        
+        height: calc(100% - 200px); /* Adjust this value based on the height of other elements */
+    }
+    #InputBox{
+        width: 85%;
+        padding-right: 10px;
+    }
+    #hand{
+    padding: 0px;
+    padding-left: 20px;
+    }
+    #SendBtm{
+        font-size: 20px;
+       margin-left: 40px;
+       margin-bottom: 30px;
+    }
+    #textArea{
+
+        padding-left: 5px;
+       margin-bottom: 0px;
+    }
+    #GroupName{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    #GroupPhoto{
+        margin-left: 0px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+   .toggle-sidebar {
+        left: 20%;
+       
+    }
+
+    #SideBar1.show {
+        display: block;
+    }
+
+    .close-sidebar {
+        display: block;
+    }
+    .toggle-profile-photo {
+        display: block;
+    }
+    
+}
